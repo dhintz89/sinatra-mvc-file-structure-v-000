@@ -10,6 +10,7 @@ class ApplicationController < Sinatra::Base
   end
   
   get "/dog" do
+    Dog.new
     erb :dog
   end
 end
